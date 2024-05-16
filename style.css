@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: Street Explorer;
+    src: url(StreetExplorer.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+#linha_topo {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#topo {
+    background-color: #77B9F2;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: black;
+}
+#topo #logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 5%;
+}
+#topo h1 {
+    font-size: 90px;
+    font-family: Street Explorer;
+}
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.colunaesq {
+    width: 25%;
+    height: 90vh;
+    padding: 65px
+}
+.colunaesq img{
+    width: 200px;
+    padding-top: 30px;
+}
+.colunadir {
+    width: 75%;
+    height: 90vh;
+    padding: 20px
+}
+.colunadir p {
+    padding-top: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#menu {
+    background-color: #5C8EF2;
+    display: flex;
+    justify-content: center;
+}
+#menu ul {
+    list-style: none;
+}
+#menu ul li {
+    display: inline;
+}
+#menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu ul li a:hover {
+    background-color:white;
+    color: black;
+}
+#parte1 {
+    height: 100vh;
+    background-color: #77B9F2;
+    color: black;
+}
+#parte1 h2{
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Street Explorer;
+}
+#parte2 {
+    height: 100vh;
+    background-color: #77B9F2;
+    padding: 20px;
+    color: white;
+}
+#parte2 h2{
+    width: 100%;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Street Explorer;
+}
+#cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#parte3 {
+    height: 100vh;
+    background-color: #77B9F2;
+    color: black;
+}
+#parte3 h2{
+    width: 100%;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Street Explorer;
+}
+#parte4 {
+    height: 120vh;
+    background-color: #77B9F2;
+    color: white;
+}
+#parte4 h2{
+    width: 100%;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Street Explorer;
+}
+#parte4 p {
+    height: 300px;
+    height: 300px;
+} 
+footer {
+    background-color: #5C8EF2;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudorodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.conteudorodape p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.rights-reserved {
+    margin-top: 10px;
+}
+#logo img {
+    height: 100%;
+    width: 100%;
+}
+.card {
+    
+    width: 300px;
+    height: 320px;
+    border: 1px solid black;   
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #77B9F2;
+    background-color: #547DE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    opacity: 0;
+}
+.card:hover {
+    height: 500px;
+    transform: scale(1.02);
+    transition: all 0.7s cubic-bezier(0, 0, .5, 1)
+}
+.card:hover p {
+    opacity: 1;
+}
+
+.card:not(:hover) {
+    transform: scale(1.);
+    transition: all 0.7s cubic-bezier(0, 0, .5, 1)
+}
+.card figure {
+    width: 290px;
+    height: 290px;
+    background-color: azure;
+    border-radius: 20px;
+}
+.card figure img {
+    width: 100%;
+}
